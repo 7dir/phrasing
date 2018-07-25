@@ -14,9 +14,9 @@
         %th Перевод
     %tbody
       - @phrasing_phrases.each do |t|
-        %tr{onclick: "document.location = '/#{Phrasing.route}/#{t.id}/edit'"}
+        %tr{onclick: "document.location = '/#{locale}/#{Phrasing.route}/#{t.id}/edit'"}
           %td.key
-            = link_to edit_phrasing_phrase_path(t, locale: params[:locale]) do
+            = link_to edit_phrasing_phrase_path(t) do
               = t.key
           %td.value
             = t.value.try(:html_safe)
