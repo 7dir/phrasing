@@ -33,15 +33,15 @@ StatusBubbleWidget.prototype = {
   },
 
   saving : function(){
-    this._alterStatus('Saving', 'orange');
+    this._alterStatus('Сохранение...', 'orange');
   },
 
   saved : function(){
-    this._alterStatus('Saved', '#56AE45');
+    this._alterStatus('Сохранено', '#56AE45');
   },
 
   error : function(){
-    this._alterStatus('Error', 'red');
+    this._alterStatus('Ошибка', 'red');
   }
 };
 

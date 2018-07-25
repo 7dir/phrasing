@@ -1,13 +1,13 @@
-%h2 Import
+%h2 Импорт
 %div
   %p
-    Upload a YAML (.yml) file following
+    Загрузить YAML (.yml) файл согласно
     = succeed "." do
-      %a{href: "http://guides.rubyonrails.org/i18n.html"} I18n conventions
+      %a{href: "http://guides.rubyonrails.org/i18n.html"} I18n соглашению
   = form_tag 'upload', multipart: true, :'accept-charset' => 'UTF-8' do
     = file_field_tag "file"
-    = submit_tag "Upload"
+    = submit_tag "Загрузить"
 
-%h2 Export
+%h2 Экспорт
 %div
-  = link_to "Download as YAML", download_phrasing_phrases_path
+  = link_to "Скачать в YAML формате", download_phrasing_phrases_path
