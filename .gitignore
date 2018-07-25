@@ -1,4 +1,5 @@
 *.gem
+.ruby-gemset
 .ruby-version
 spec/dummy/.sass-cache/
 spec/dummy/db/development.sqlite3
